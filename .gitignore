@@ -1,0 +1,33 @@
+.DS_Store
+__pycache__/
+venv
+.venv
+.vscode
+.env
+*.cfg
+*.csv
+data/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# Config files and folders
+.idea
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+etc/
+include/
+lib/
+lib64/
+parts/
+sdist/
+share/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
