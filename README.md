@@ -1,6 +1,6 @@
 # How Can A Wellness Technology Company Play It Smart?
 
-# Step 1: Scoping
+# Step 1: Ask
 
 #### Company Background
 
@@ -27,7 +27,7 @@ Analyze FitBit Fitness Tracker usage data to understand consumer behavior and in
 
 ---
 
-## Step 2: Gathering
+## Step 2: Prepare
 
 #### Data Details
 
@@ -56,7 +56,7 @@ The following file is selected for analysis.
 dailyActivity_merged.csv
 ```
 
-## Step 3: Cleaning
+## Step 3: Process
 
 Python is being used to prepare and process the data in a Jupyter Notebook.
 
@@ -1141,7 +1141,7 @@ daily_activity.head()
 </table>
 </div>
 
-## Step 4: Exploring
+## Step 4: Analyze
 
 Pull statistics and perform calculations for further analysis
 
@@ -1361,7 +1361,7 @@ daily_activity.describe()
 
 **Average Calories Burned**: The average calorie burn for users is estimated at 2,303 calories, which is roughly equivalent to 0.6 pounds. It's important to note that a detailed interpretation of calorie burn is influenced by various factors, including age, weight, exercise, hormones, and daily calorie intake. These specific factors are not known, making it challenging to provide a more detailed analysis.
 
-## Step 5: Sharing
+## Step 5: Share
 
 Create the visualizations and communicate findings.
 
@@ -1695,7 +1695,7 @@ The significant predominance of sedentary minutes highlights the practical, ever
 
 ---
 
-## Recommendations
+## Step 6: Act
 
 To encourage more frequent use of the app, it's essential to convey to users that it offers more than just tracking sports activities. The objective is to help users realize that frequent use leads to better data collection, which, in turn, provides more insights and actionable recommendations for their well-being.
 
