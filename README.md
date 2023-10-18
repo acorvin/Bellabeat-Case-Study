@@ -1366,8 +1366,6 @@ daily_activity.describe()
 Create the visualizations and communicate findings.
 
 ```python
-# Import matplotlib pyplot package
-import matplotlib.pyplot as plt
 
 # Calculate the frequency of each day
 weekday_counts = daily_activity['ActivityDate'].dt.dayofweek
