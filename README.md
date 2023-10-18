@@ -61,7 +61,7 @@ dailyActivity_merged.csv
 Python is being used to prepare and process the data in a Jupyter Notebook.
 
 ```python
-#import packages
+# Import packages
 
 import pandas as pd
 import numpy as np
@@ -70,12 +70,12 @@ import datetime as dt
 ```
 
 ```python
-#import the dataset
+# Import dataset
 daily_activity = pd.read_csv("data/dailyActivity_merged.csv")
 ```
 
 ```python
-# Explore the dataset
+# Explore dataset
 daily_activity.head()
 ```
 
@@ -836,7 +836,7 @@ daily_activity.head()
 </div>
 
 ```python
-# create new column "total_mins" containing sum of total minutes.
+# Create new column "TotalMins" containing sum of total minutes.
 daily_activity["TotalMins"] = daily_activity["VeryActiveMinutes"] + daily_activity["FairlyActiveMinutes"] + daily_activity["LightlyActiveMinutes"] + daily_activity["SedentaryMinutes"]
 daily_activity["TotalMins"].head(5)
 ```
@@ -990,7 +990,7 @@ daily_activity.head()
 </div>
 
 ```python
-# create new column *total_hours* by converting to hour and round float to two decimal places
+# Create new column "TotalHours" by converting to hour and round float to two decimal places
 daily_activity["TotalHours"] = round(daily_activity["TotalMins"] / 60)
 ```
 
@@ -1146,7 +1146,7 @@ daily_activity.head()
 Pull statistics and perform calculations for further analysis
 
 ```python
-# pull general statistics
+# Pull general statistics
 daily_activity.describe()
 ```
 
@@ -1476,7 +1476,7 @@ The pie chart effectively illustrates the distribution of "Usage" categories, wi
 
 ```python
 # Merge 'daily_activity' and 'daily_use' based for usage types information
-daily_activity_usage = pd.merge(daily_activity, daily_use2, on='Id', how='left')
+daily_activity_usage = pd.merge(daily_activity, daily_use, on='Id', how='left')
 
 # Calculate 'day' as the abbreviated day name
 daily_activity_usage['day'] = daily_activity_usage['ActivityDate'].dt.strftime('%a')
@@ -1569,12 +1569,8 @@ print(steps_hour)
     6  Sat      8153.0
 
 ```python
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 
-# Assuming 'steps_hour' DataFrame is already defined
-
+# Create days and mean_steps series
 days = steps_hour['day']
 mean_steps = steps_hour['mean_steps']
 
@@ -1624,14 +1620,14 @@ plt.show()
 **Overall Activity Pattern**: In summary, the data suggests a recurring pattern of activity where activity levels peak on Saturdays and gradually decrease as the week unfolds. This pattern culminates with Sunday as the least active day, which may be associated with rest and relaxation for most individuals.
 
 ```python
-# plotting scatter plot
+# Plot scatter plot
 plt.style.use("default")
 plt.figure(figsize=(8,6)) # specify size of the chart
 plt.scatter(daily_activity.TotalSteps, df.Calories,
             alpha = 0.8, c = df.Calories,
             cmap = "Spectral")
 
-# add annotations and visuals
+# Add annotations and visuals
 MedianCalories = 2303
 MedianSteps = 7637
 
@@ -1661,13 +1657,13 @@ The scatter plot analysis highlights the positive correlation between steps and 
 **Possible Reasons for Outliers**: These outliers could be attributed to natural variations in the data, changes in the user's activity patterns, or potential errors in data collection. Errors may include miscalculations, data contamination, or human errors in recording the information.
 
 ```python
-# calculating total of individual minutes column
+# Calculate total of individual minutes column
 very_active_mins = daily_activity["VeryActiveMinutes"].sum()
 fairly_active_mins = daily_activity["FairlyActiveMinutes"].sum()
 lightly_active_mins = daily_activity["LightlyActiveMinutes"].sum()
 sedentary_mins = daily_activity["SedentaryMinutes"].sum()
 
-# plotting pie chart
+# Plot pie chart
 slices = [very_active_mins, fairly_active_mins, lightly_active_mins, sedentary_mins]
 labels = ["Very active minutes", "Fairly active minutes", "Lightly active minutes", "Sedentary minutes"]
 colors = ['#99ff99', '#66b3ff', '#ffcc99', '#ff9999']
