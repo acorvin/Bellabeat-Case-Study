@@ -1,6 +1,6 @@
 # How Can A Wellness Technology Company Play It Smart?
 
-# Step 1: Ask
+# Step 1: Scope
 
 #### Company Background
 
@@ -1689,7 +1689,7 @@ The significant predominance of sedentary minutes highlights the practical, ever
 
 ---
 
-## Step 6: Act
+## Step 6: Recommendations
 
 To encourage more frequent use of the app, it's essential to convey to users that it offers more than just tracking sports activities. The objective is to help users realize that frequent use leads to better data collection, which, in turn, provides more insights and actionable recommendations for their well-being.
 
