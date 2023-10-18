@@ -1,3 +1,5 @@
+![BellaBeat Logo](bellabeat.png)
+
 # How Can A Wellness Technology Company Play It Smart?
 
 # Step 1: Scope
